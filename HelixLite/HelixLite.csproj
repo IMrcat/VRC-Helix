@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F7738BB6-2916-4600-AE7D-BB031550A9BA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HelixLiteModule</RootNamespace>
+    <AssemblyName>HelixLite</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony" />
+    <Reference Include="Assembly-CSharp" />
+    <Reference Include="Assembly-CSharp-firstpass" />
+    <Reference Include="DataModel" />
+    <Reference Include="Il2CppMono.Security" />
+    <Reference Include="Il2Cppmscorlib" />
+    <Reference Include="Il2CppSystem.Core" />
+    <Reference Include="Localization.LocalizableString" />
+    <Reference Include="MelonLoader" />
+    <Reference Include="Photon-DotNet" />
+    <Reference Include="ReMod.Core" />
+    <Reference Include="SteamVR" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="UnhollowerBaseLib" />
+    <Reference Include="Unity.TextMeshPro" />
+    <Reference Include="UnityEngine.AnimationModule" />
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="UnityEngine.ImageConversionModule" />
+    <Reference Include="UnityEngine.InputLegacyModule" />
+    <Reference Include="UnityEngine.PhysicsModule" />
+    <Reference Include="UnityEngine.UI" />
+    <Reference Include="VRC.Udon" />
+    <Reference Include="VRC.Udon.Common" />
+    <Reference Include="VRC.UI.Elements" />
+    <Reference Include="VRC.UI.Shared" />
+    <Reference Include="VRCCore-Standalone" />
+    <Reference Include="VRCSDKBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\CustomNameplate.cs" />
+    <Compile Include="EdenRaycastExtension\RayCastView.cs" />
+    <Compile Include="Exploits\AmongusShit.cs" />
+    <Compile Include="Exploits\BlackCatDecorShit.cs" />
+    <Compile Include="Exploits\EarRape.cs" />
+    <Compile Include="Exploits\ESP.cs" />
+    <Compile Include="Exploits\ForceLewd.cs" />
+    <Compile Include="Exploits\GeneralPickups.cs" />
+    <Compile Include="Exploits\HighlightsFXExtensions.cs" />
+    <Compile Include="Exploits\InstanceHistroy.cs" />
+    <Compile Include="Exploits\ItemGravity.cs" />
+    <Compile Include="Exploits\ItemIndex.cs" />
+    <Compile Include="Exploits\JustB3FunnyShit.cs" />
+    <Compile Include="Exploits\Misc.cs" />
+    <Compile Include="Exploits\SelfHide.cs" />
+    <Compile Include="Exploits\TestPilots.cs" />
+    <Compile Include="Exploits\UdonIndex.cs" />
+    <Compile Include="Exploits\UdonNuke.cs" />
+    <Compile Include="HelixLite\Exploits\Murder4.cs" />
+    <Compile Include="HelixLite\Resources\Resource.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="MenuZone\AmongusMenu.cs" />
+    <Compile Include="MenuZone\BlackcatMenu.cs" />
+    <Compile Include="MenuZone\ExploitsMenu.cs" />
+    <Compile Include="MenuZone\GenericTarget.cs" />
+    <Compile Include="MenuZone\ItemMenu.cs" />
+    <Compile Include="MenuZone\MenuManager.cs" />
+    <Compile Include="MenuZone\MovementMenu.cs" />
+    <Compile Include="MenuZone\MurderMenu.cs" />
+    <Compile Include="MenuZone\PatchedButtonsMenu.cs" />
+    <Compile Include="MenuZone\RandomWorldLaunchPad.cs" />
+    <Compile Include="MenuZone\SettingsMenu.cs" />
+    <Compile Include="MenuZone\TestPilotsMenu.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Movement\Flight.cs" />
+    <Compile Include="Movement\Jetpack.cs" />
+    <Compile Include="Movement\RunJump.cs" />
+    <Compile Include="Movement\SelfGravity.cs" />
+    <Compile Include="Movement\SpeedJump.cs" />
+    <Compile Include="Movement\StepHeight.cs" />
+    <Compile Include="PatchZone\GodModeCheck.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Binds.cs" />
+    <Compile Include="Resources\ConfigZone.cs" />
+    <Compile Include="Resources\CustomShit\InputBox.cs" />
+    <Compile Include="Resources\Extensions\PlayerExtensions.cs" />
+    <Compile Include="Resources\Extensions\SerializationUtils.cs" />
+    <Compile Include="Resources\PatchZone\Patch.cs" />
+    <Compile Include="Resource\SerializationUtils.cs" />
+    <Compile Include="SpoofName.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableContextAttribute.cs" />
+    <Compile Include="Toast\ToastNotif.cs" />
+    <Compile Include="Values\GatherUdon.cs" />
+    <Compile Include="Values\LocalUser.cs" />
+    <Compile Include="Values\others.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HelixLite\Resources\image.png" />
+    <EmbeddedResource Include="HelixLite\Resources\Resource.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
